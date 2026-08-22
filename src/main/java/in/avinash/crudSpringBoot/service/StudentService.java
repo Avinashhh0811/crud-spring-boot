@@ -1,11 +1,7 @@
 package in.avinash.crudSpringBoot.service;
-
-
 import in.avinash.crudSpringBoot.entity.Student;
 import in.avinash.crudSpringBoot.repository.StudentRepository;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -14,7 +10,8 @@ public class StudentService {
 
     private StudentRepository studentRepository;
 
-    public StudentService(StudentRepository studentRepository){
+    public StudentService(StudentRepository studentRepository)
+    {
         this.studentRepository = studentRepository;
     }
     //Creating student logic
